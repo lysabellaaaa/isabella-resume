@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lylia (Thao My) Luong — CV</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --black: #111111;
+    --mid: #444444;
+    --light: #777777;
+    --rule: #d8d8d8;
+    --page: #ffffff;
+    --accent: #1a1a1a;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    background: #f4f3f0;
+    color: var(--black);
+    padding: 48px 24px;
+    line-height: 1.6;
+  }
+
+  .page {
+    max-width: 820px;
+    margin: 0 auto;
+    background: var(--page);
+    padding: 64px 72px;
+    box-shadow: 0 2px 24px rgba(0,0,0,0.07);
+  }
+
+  /* ── HEADER ── */
+  .header { margin-bottom: 36px; }
+  .header h1 {
+    font-family: 'EB Garamond', serif;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    color: var(--black);
+    margin-bottom: 6px;
+  }
+  .header .tagline {
+    font-size: 12.5px;
+    font-weight: 400;
+    color: var(--mid);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .contact {
+    font-size: 12.5px;
+    color: var(--mid);
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .contact a { color: var(--mid); text-decoration: none; border-bottom: 1px solid var(--rule); padding-bottom: 1px; }
+  .contact a:hover { color: var(--black); border-color: var(--black); }
+
+  .profile-box {
+    margin-top: 20px;
+    border-left: 2px solid var(--black);
+    padding: 10px 16px;
+    font-size: 13px;
+    color: var(--mid);
+    line-height: 1.7;
+  }
+
+  /* ── SECTION ── */
+  .section { margin-top: 34px; }
+  .section-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 9.5px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--light);
+    margin-bottom: 14px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  /* ── ENTRY ── */
+  .entry { margin-bottom: 22px; }
+  .entry:last-child { margin-bottom: 0; }
+
+  .entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 2px;
+  }
+  .entry-header .left { flex: 1; min-width: 0; }
+  .entry-header .date {
+    font-size: 11.5px;
+    color: var(--light);
+    white-space: nowrap;
+    flex-shrink: 0;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+  }
+
+  .org-name {
+    font-family: 'EB Garamond', serif;
+    font-size: 15.5px;
+    font-weight: 500;
+    color: var(--black);
+  }
+  .org-name a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--rule); }
+  .org-name a:hover { border-color: var(--black); }
+
+  .role {
+    font-size: 12px;
+    color: var(--mid);
+    font-weight: 400;
+    margin-top: 1px;
+  }
+  .role em { font-style: normal; color: var(--light); }
+
+  .entry-desc {
+    font-size: 12.5px;
+    color: var(--mid);
+    margin-top: 6px;
+    line-height: 1.65;
+  }
+
+  .bullets {
+    margin-top: 7px;
+    padding-left: 14px;
+    list-style: none;
+  }
+  .bullets li {
+    font-size: 12.5px;
+    color: var(--mid);
+    line-height: 1.65;
+    margin-bottom: 4px;
+    position: relative;
+    padding-left: 12px;
+  }
+  .bullets li::before {
+    content: '–';
+    position: absolute;
+    left: 0;
+    color: var(--light);
+  }
+  .bullets li strong { color: var(--black); font-weight: 500; }
+
+  /* sub-projects inside Electric Sheep */
+  .project-item { margin-top: 9px; }
+  .project-item .project-title {
+    font-size: 12.5px;
+    font-weight: 500;
+    color: var(--black);
+  }
+  .project-item .project-desc {
+    font-size: 12px;
+    color: var(--mid);
+    line-height: 1.6;
+    margin-top: 2px;
+  }
+
+  .tech {
+    margin-top: 7px;
+    font-size: 11.5px;
+    color: var(--light);
+  }
+  .tech strong { color: var(--mid); font-weight: 400; }
+
+  /* ── EDUCATION special ── */
+  .edu-degree {
+    font-size: 12px;
+    color: var(--mid);
+    margin-top: 1px;
+  }
+  .edu-note {
+    font-size: 11.5px;
+    color: var(--light);
+    font-style: italic;
+    margin-top: 2px;
+  }
+
+  /* ── CONFERENCE entry (compact) ── */
+  .conf-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 10px;
+    font-size: 12.5px;
+  }
+  .conf-entry .conf-left { flex: 1; }
+  .conf-entry .conf-name { font-weight: 500; color: var(--black); }
+  .conf-entry .conf-name a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--rule); }
+  .conf-entry .conf-name a:hover { border-color: var(--black); }
+  .conf-entry .conf-sub { font-size: 11.5px; color: var(--light); margin-top: 1px; }
+  .conf-entry .conf-date { font-size: 11.5px; color: var(--light); white-space: nowrap; flex-shrink: 0; }
+
+  .divider { border: none; border-top: 1px solid var(--rule); margin: 10px 0; }
+
+  /* press links */
+  .press { font-size: 11.5px; color: var(--light); margin-top: 5px; }
+  .press a { color: var(--light); text-decoration: none; border-bottom: 1px solid var(--rule); margin-right: 10px; }
+  .press a:hover { color: var(--black); }
+
+  /* pitch deck links */
+  .links-row { font-size: 11.5px; color: var(--light); margin-top: 6px; }
+  .links-row a { color: var(--light); text-decoration: none; border-bottom: 1px solid var(--rule); margin-right: 12px; }
+  .links-row a:hover { color: var(--black); }
+
+  @media (max-width: 640px) {
+    .page { padding: 36px 28px; }
+    .entry-header { flex-direction: column; gap: 2px; }
+    .conf-entry { flex-direction: column; gap: 2px; }
+  }
+
+  @media print {
+    body { background: white; padding: 0; }
+    .page { box-shadow: none; padding: 40px 48px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>Lylia (Thao My) Luong</h1>
+    <div class="tagline">AI Safety Research Engineer</div>
+    <div class="contact">
+      <a href="mailto:Lylia.Luong@gmail.com">Lylia.Luong@gmail.com</a>
+      <span>Ho Chi Minh City, Vietnam</span>
+      <a href="https://www.linkedin.com/in/lylia-luong/" target="_blank">LinkedIn</a>
+    </div>
+    <div class="profile-box">
+      Research engineer focused on AI safety evaluations and adversarial robustness. Currently running 3 active research projects across benchmark integrity, cross-session threat detection, and welfare capability measurement — within 5 months of entering the field. Admitted to CAMBRIA (10% acceptance rate), 2× SPAR-accepted, and embedded in the EA/AI safety institutional ecosystem.
+    </div>
+  </div>
+
+  <!-- RESEARCH EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Research Experience</div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <div class="left">
+          <div class="org-name">Electric Sheep</div>
+          <div class="role">AI Safety Researcher &nbsp;·&nbsp; <em>FutureKind Winter Fellowship</em></div>
+        </div>
+        <div class="date">Nov 2025 – Present</div>
+      </div>
+      <div class="entry-desc">AI welfare and safety research org. Working directly with mentor Philip Kratz on three interconnected empirical research projects investigating where both generation and evaluation stages break down in frontier AI systems.</div>
+      <div class="project-item">
+        <div class="project-title">Model Position Drift Under Adversarial Pressure</div>
+        <div class="project-desc">Investigating how models' behavioral profiles shift under systematic adversarial input, characterizing trajectory-level drift and failure modes in capability and alignment benchmarks.</div>
+      </div>
+      <div class="project-item">
+        <div class="project-title">Judge Bias Introduced by Response Style</div>
+        <div class="project-desc">Empirically measuring how stylistic features of model outputs (verbosity, hedging, formatting) distort LLM-as-judge evaluation scores, independent of substantive answer quality.</div>
+      </div>
+      <div class="project-item">
+        <div class="project-title">Ground Truth Problem in Welfare Capability Measurement</div>
+        <div class="project-desc">Examining the absence of reliable ground truth in evaluations of whether models accurately reason about nonhuman welfare, and proposing criteria for scalable oversight under partial verifiability.</div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="entry">
+      <div class="entry-header">
+        <div class="left">
+          <div class="org-name">MANTA</div>
+          <div class="role">Research Mentee &nbsp;·&nbsp; <em>SPAR Spring 2026 · Sentient Futures / Electric Sheep</em></div>
+        </div>
+        <div class="date">2026</div>
+      </div>
+      <ul class="bullets">
+        <li>Developing benchmarks and evaluation tools to assess how frontier AI models reason about nonhuman and animal welfare.</li>
+        <li>Expanding prior work with refined scenarios, improved metrics, and integration with Inspect for broader accessibility and reproducibility.</li>
+        <li>Investigating systemic failure modes in benchmark evaluations for agentic models on domain accuracy, especially in welfare reasoning contexts.</li>
+      </ul>
+    </div>
+
+    <hr class="divider">
+
+    <div class="entry">
+      <div class="entry-header">
+        <div class="left">
+          <div class="org-name"><a href="https://sparai.org/projects/sp26/recP9TAD2YEJsBjO7/" target="_blank">FragGuard</a></div>
+          <div class="role">Research Mentee &nbsp;·&nbsp; <em>SPAR Spring 2026 · Mila / ERA</em></div>
+        </div>
+        <div class="date">2026</div>
+      </div>
+      <div class="entry-desc">Cross-session malicious activity detection for model APIs — with Linh Le & David Williams-King (Mila / ERA).</div>
+      <ul class="bullets">
+        <li>Detecting malicious model misuse where adversarial queries are decomposed across multiple sessions to mask malicious intent from individual-session classifiers.</li>
+        <li>Developing detection methods robust to query fragmentation — a critical gap in current API-level AI security.</li>
+        <li>Situated at the intersection of misuse risk and AI security evaluation.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PROFESSIONAL EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Professional Experience</div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <div class="left">
+          <div class="org-name"><a href="https://deepsurg.ai" target="_blank">DeepSurg</a></div>
+          <div class="role">Founding AI Engineer &amp; Researcher &nbsp;·&nbsp; <em>Remote, Turkey HQ</em></div>
+        </div>
+        <div class="date">Aug 2025 – Present</div>
+      </div>
+      <div class="entry-desc">AI-powered surgical technology platform enhancing precision and patient safety through real-time decision support.</div>
+      <ul class="bullets">
+        <li>Designed and experimented with optimized segmentation networks for volumetric vascular mapping.</li>
+        <li>Integrated residual-inception modules to improve feature retention and accelerate 3D segmentation efficiency.</li>
+        <li>Implemented hybrid CNN–Transformer architectures (PE-Net with EFC modules) to capture vascular continuity and extract fine-grained anatomical details from noisy CT angiography data.</li>
+      </ul>
+      <div class="tech"><strong>Stack:</strong> Python · PyTorch · MONAI · nnU-Net · 3D Slicer · Mimics · NumPy · OpenCV · CUDA · Git</div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="entry">
+      <div class="entry-header">
+        <div class="left">
+          <div class="org-name"><a href="https://www.averydennison.com" target="_blank">Avery Dennison Corporation</a></div>
+          <div class="role">Management Trainee &nbsp;·&nbsp; <em>Long Hau IP, Vietnam</em></div>
+        </div>
+        <div class="date">2023 – 2025</div>
+      </div>
+      <div class="entry-desc">Fortune 500 materials science leader delivering adhesive technologies and labeling solutions globally.</div>
+      <ul class="bullets">
+        <li>Automated integration workflows across 4 finance divisions, deploying Python + UiPath RPA solutions to eliminate 120+ manual hours/month.</li>
+        <li>Architected a tax reconciliation system that reduced month-end closing time by 25%, later adopted as APAC regional standard.</li>
+      </ul>
+      <div class="tech"><strong>Stack:</strong> Python · Streamlit · Docker · Apache Arrow · UiPath · Excel VBA</div>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-title">Education</div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <div class="left">
+          <div class="org-name"><a href="https://www.rmit.edu.vn" target="_blank">Royal Melbourne Institute of Technology (RMIT) University</a></div>
+          <div class="edu-degree">Bachelor of Science in Information Technology &nbsp;·&nbsp; GPA: 3.75/4.0</div>
+          <div class="edu-note">Vice-Chancellor Scholar — Full-Tuition Merit Scholarship, awarded to Top 7 incoming students annually</div>
+        </div>
+        <div class="date">Jun 2021 – May 2025</div>
+      </div>
+      <ul class="bullets">
+        <li>Ranked Top 8 in 2025 IT graduates cohort; Top 5% university-wide with 16/21 High Distinction courses (85%+)</li>
+        <li>Top student in: Software Engineering Project Management, Artificial Intelligence &amp; Machine Learning, UI/UX Product Design</li>
+      </ul>
+      <div class="press">
+        Press:
+        <a href="https://www.rmit.edu.vn" target="_blank">RMIT Graduates' Growth through Competitions</a>
+        <a href="https://www.rmit.edu.vn" target="_blank">Founding AI Engineer at DeepSurg — RMIT Spotlight</a>
+        <a href="https://www.rmit.edu.vn" target="_blank">How navigating competitions helped me find my mission</a>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="entry">
+      <div class="entry-header">
+        <div class="left">
+          <div class="org-name"><a href="https://www.put.poznan.pl" target="_blank">International Strategic Management Workshop</a></div>
+          <div class="edu-degree">Poznań University of Technology &nbsp;·&nbsp; Poznań, Poland</div>
+        </div>
+        <div class="date">Apr 2025</div>
+      </div>
+      <div class="entry-desc">Selected among 90 European peers for a 5-day intensive workshop on systems thinking, Balanced Scorecard, and AI-integrated strategy. Presented to an international faculty panel.</div>
+    </div>
+  </div>
+
+  <!-- AI SAFETY PROGRAMS -->
+  <div class="section">
+    <div class="section-title">AI Safety Programs &amp; Training</div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <div class="left">
+          <div class="org-name"><a href="https://www.cambridgeai.org" target="_blank">Cambridge Bootcamp for Research in Interpretability and Alignment (CAMBRIA)</a></div>
+          <div class="role">Participant &nbsp;·&nbsp; <em>Harvard Square, Boston</em></div>
+        </div>
+        <div class="date">Jan 5 – Jan 23, 2026</div>
+      </div>
+      <div class="entry-desc">10% acceptance rate — 1 of 20 participants worldwide admitted to the Cambridge Boston Alignment Initiative's intensive research bootcamp.</div>
+      <ul class="bullets">
+        <li>3-week technical curriculum: deep learning foundations (CNNs, ResNets), transformer architectures built from scratch, RL (DQN, policy gradients, PPO), and RLHF.</li>
+        <li>Hands-on mechanistic interpretability of transformer models — understanding internal representations and failure modes.</li>
+        <li>Collaborative coding sessions, research seminars, and group capstone project applying safety-oriented ML techniques to real-world model behavior analysis.</li>
+      </ul>
+    </div>
+
+    <hr class="divider">
+
+    <div class="entry">
+      <div class="entry-header">
+        <div class="left">
+          <div class="org-name"><a href="https://www.encode.org" target="_blank">Encode AI Vietnam</a></div>
+          <div class="role">Vietnam Country Lead</div>
+        </div>
+        <div class="date">Nov 2025 – Present</div>
+      </div>
+      <div class="entry-desc">International AI policy and advocacy organisation mobilising youth around AI governance and safety issues.</div>
+      <ul class="bullets">
+        <li>Establishing funding and sponsorship pipelines with technology corporations and philanthropic funders.</li>
+        <li>Organizing panel discussions on imminent AI risks; securing partnerships for technical curriculum delivery across Vietnam.</li>
+      </ul>
+    </div>
+
+    <hr class="divider">
+
+    <div class="entry">
+      <div class="entry-header">
+        <div class="left">
+          <div class="org-name"><a href="https://futurekind.org" target="_blank">FutureKind Winter Fellowship</a></div>
+          <div class="role">AI Development Fellow</div>
+        </div>
+        <div class="date">Nov 2025 – Present</div>
+      </div>
+      <div class="entry-desc">Global, immersive accelerator and fellowship focused on AI for Animals initiatives — empowering young researchers to move from idea to prototype to impact.</div>
+      <ul class="bullets">
+        <li>Collaborated across time zones with mentors, peers, and industry partners to explore how advanced AI can serve vulnerable animals.</li>
+        <li>Institutional home for the Electric Sheep research projects above.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- CONFERENCES -->
+  <div class="section">
+    <div class="section-title">Conferences</div>
+    <div class="conf-entry">
+      <div class="conf-left">
+        <div class="conf-name"><a href="https://www.hpair.org/hconf" target="_blank">HPAIR Harvard Conference (HCONF 2026)</a></div>
+        <div class="conf-sub">Harvard University, Cambridge, MA &nbsp;·&nbsp; HPAIR's flagship annual conference for global leaders, professionals, and students</div>
+      </div>
+      <div class="conf-date">Feb 6–8, 2026</div>
+    </div>
+  </div>
+
+  <!-- COMPETITIONS -->
+  <div class="section">
+    <div class="section-title">Selected Competitions &amp; Leadership</div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <div class="left">
+          <div class="org-name">McKinsey Young Leaders for Vietnam (YLV) Fellowship</div>
+          <div class="role">Champion &nbsp;·&nbsp; <em>Ho Chi Minh City</em></div>
+        </div>
+        <div class="date">May – Nov 2024</div>
+      </div>
+      <div class="entry-desc">Selective leadership fellowship with real-world consulting and sustainability research evaluated by McKinsey consultants and NGO partners.</div>
+      <ul class="bullets">
+        <li>Two-time team leader for competitive McKinsey-evaluated fieldwork cases; both fieldworks ranked <strong>1/20 teams</strong>.</li>
+        <li><strong>Fieldwork 1 — Boatman Foundation:</strong> Designed a technology-integrated educational aid campaign for undereducated children in Vietnam Highlands — combining technology tools, scholarships, welfare benefits, and teaching ambassadors.</li>
+        <li><strong>Fieldwork 2 — Vun Art:</strong> Led end-to-end consulting for a social enterprise employing disabled workers; designed and executed a textile collection campaign to secure sustainable inputs.</li>
+        <li>Shortlisted for McKinsey Young Leaders for Inclusion (international); invited as Case Coach for YLV 2025.</li>
+      </ul>
+      <div class="links-row">
+        <a href="#">Fieldwork 1 Pitch Deck</a>
+        <a href="#">Fieldwork 2 Pitch Deck</a>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="entry">
+      <div class="entry-header">
+        <div class="left">
+          <div class="org-name">MAERSK × RMIT Sustainability Impact Challenge</div>
+          <div class="role">Champion &nbsp;·&nbsp; <em>Ho Chi Minh City</em></div>
+        </div>
+        <div class="date">May – Nov 2024</div>
+      </div>
+      <ul class="bullets">
+        <li>Developed the winning decarbonization strategy among 50+ teams — a 5-year roadmap cutting Maersk's carbon footprint 40% through <strong>AI telematics for fuel optimization</strong>, mobile carbon capture, and carbon credit investments generating 12% ROI.</li>
+        <li>Built financial models demonstrating $2.8M in long-term operational savings with full ESG compliance.</li>
+        <li>Secured 3+ industry certifications; achieved 20% cost optimization through negotiated procurement.</li>
+      </ul>
+    </div>
+
+    <hr class="divider">
+
+    <div class="entry">
+      <div class="entry-header">
+        <div class="left">
+          <div class="org-name">RMIT FinTech Startup Competition × KardiaChain</div>
+          <div class="role">National Champion &nbsp;·&nbsp; <em>Ho Chi Minh City</em></div>
+        </div>
+        <div class="date">Jun – Sep 2023</div>
+      </div>
+      <ul class="bullets">
+        <li>Developed <strong>HemoChain</strong> — Vietnam's first blockchain-powered blood transfusion network interconnecting hospitals for real-time coordination in critical care.</li>
+        <li>Led dual technical and business teams to deliver a POC using Hyperledger Fabric and Google Maps API; served as main pitcher.</li>
+        <li>Won "Best Pitch" from KardiaChain (leading blockchain DeFi platform); received internship offer.</li>
+      </ul>
+      <div class="links-row"><a href="#">HemoChain Pitch Deck</a></div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="entry">
+      <div class="entry-header">
+        <div class="left">
+          <div class="org-name">ASEA-China-India Youth Leadership Summit (ACIYLS)</div>
+          <div class="role">National 2nd Place &nbsp;·&nbsp; <em>Singapore &amp; Vietnam</em></div>
+        </div>
+        <div class="date">Mar – Oct 2024</div>
+      </div>
+      <ul class="bullets">
+        <li><strong>Vietnam — Technical Research Lead:</strong> Developed OAKIA — a textile-to-textile circular solution using microbial enzymes and <strong>AI NIR spectroscopy</strong> to identify fabric compositions and enable sustainable composting, addressing Vietnam's 15M kg annual textile waste.</li>
+        <li><strong>Singapore — Team Lead:</strong> Led a randomly assigned team of 10 to design Be-Cool: a sustainable urban cooling company integrating IoT passive cooling, terracotta evaporative systems, and solar reflective coatings.</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
