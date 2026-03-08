@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lylia (Thao My) Luong — CV</title>
+<title>Isabella Luong — CV</title>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -14,7 +14,6 @@
     --light: #777777;
     --rule: #d8d8d8;
     --page: #ffffff;
-    --accent: #1a1a1a;
   }
 
   body {
@@ -72,21 +71,22 @@
   }
 
   /* ── SECTION ── */
-  .section { margin-top: 34px; }
+  .section { margin-top: 36px; }
+
   .section-title {
     font-family: 'DM Sans', sans-serif;
-    font-size: 9.5px;
+    font-size: 10px;
     font-weight: 500;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: var(--light);
+    color: var(--black);
     margin-bottom: 14px;
-    padding-bottom: 6px;
-    border-bottom: 1px solid var(--rule);
+    padding-bottom: 7px;
+    border-bottom: 1.5px solid var(--black);
   }
 
   /* ── ENTRY ── */
-  .entry { margin-bottom: 22px; }
+  .entry { margin-bottom: 24px; }
   .entry:last-child { margin-bottom: 0; }
 
   .entry-header {
@@ -132,7 +132,7 @@
 
   .bullets {
     margin-top: 7px;
-    padding-left: 14px;
+    padding-left: 0;
     list-style: none;
   }
   .bullets li {
@@ -141,7 +141,7 @@
     line-height: 1.65;
     margin-bottom: 4px;
     position: relative;
-    padding-left: 12px;
+    padding-left: 14px;
   }
   .bullets li::before {
     content: '–';
@@ -152,7 +152,19 @@
   .bullets li strong { color: var(--black); font-weight: 500; }
 
   /* sub-projects inside Electric Sheep */
-  .project-item { margin-top: 9px; }
+  .project-item {
+    margin-top: 9px;
+    padding-left: 14px;
+    position: relative;
+  }
+  .project-item::before {
+    content: '–';
+    position: absolute;
+    left: 0;
+    color: var(--light);
+    font-size: 12.5px;
+    top: 0;
+  }
   .project-item .project-title {
     font-size: 12.5px;
     font-weight: 500;
@@ -162,17 +174,17 @@
     font-size: 12px;
     color: var(--mid);
     line-height: 1.6;
-    margin-top: 2px;
+    margin-top: 1px;
   }
 
   .tech {
-    margin-top: 7px;
+    margin-top: 8px;
     font-size: 11.5px;
     color: var(--light);
   }
   .tech strong { color: var(--mid); font-weight: 400; }
 
-  /* ── EDUCATION special ── */
+  /* ── EDUCATION ── */
   .edu-degree {
     font-size: 12px;
     color: var(--mid);
@@ -185,7 +197,7 @@
     margin-top: 2px;
   }
 
-  /* ── CONFERENCE entry (compact) ── */
+  /* ── CONFERENCE ── */
   .conf-entry {
     display: flex;
     justify-content: space-between;
@@ -201,14 +213,12 @@
   .conf-entry .conf-sub { font-size: 11.5px; color: var(--light); margin-top: 1px; }
   .conf-entry .conf-date { font-size: 11.5px; color: var(--light); white-space: nowrap; flex-shrink: 0; }
 
-  .divider { border: none; border-top: 1px solid var(--rule); margin: 10px 0; }
+  .divider { border: none; border-top: 1px solid var(--rule); margin: 18px 0; }
 
-  /* press links */
-  .press { font-size: 11.5px; color: var(--light); margin-top: 5px; }
+  .press { font-size: 11.5px; color: var(--light); margin-top: 6px; }
   .press a { color: var(--light); text-decoration: none; border-bottom: 1px solid var(--rule); margin-right: 10px; }
   .press a:hover { color: var(--black); }
 
-  /* pitch deck links */
   .links-row { font-size: 11.5px; color: var(--light); margin-top: 6px; }
   .links-row a { color: var(--light); text-decoration: none; border-bottom: 1px solid var(--rule); margin-right: 12px; }
   .links-row a:hover { color: var(--black); }
@@ -230,15 +240,15 @@
 
   <!-- HEADER -->
   <div class="header">
-    <h1>Lylia (Thao My) Luong</h1>
+    <h1>Isabella (Thao My) Luong</h1>
     <div class="tagline">AI Safety Research Engineer</div>
     <div class="contact">
-      <a href="mailto:Lylia.Luong@gmail.com">Lylia.Luong@gmail.com</a>
+      <a href="/cdn-cgi/l/email-protection#c28ebbaeaba3ec8eb7adaca582a5afa3abaeeca1adaf"><span class="__cf_email__" data-cfemail="8bc7f2e7e2eaa5c7fee4e5eccbece6eae2e7a5e8e4e6">[email&#160;protected]</span></a>
       <span>Ho Chi Minh City, Vietnam</span>
-      <a href="https://www.linkedin.com/in/lylia-luong/" target="_blank">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/isabella-my-luong" target="_blank">LinkedIn</a>
     </div>
     <div class="profile-box">
-      Research engineer focused on AI safety evaluations and adversarial robustness. Currently running 3 active research projects across benchmark integrity, cross-session threat detection, and welfare capability measurement — within 5 months of entering the field. Admitted to CAMBRIA (10% acceptance rate), 2× SPAR-accepted, and embedded in the EA/AI safety institutional ecosystem.
+      Research engineer focused on AI safety evaluations and adversarial robustness. Currently running 3 active research projects across benchmark integrity, cross-session threat detection, and welfare capability measurement — within 5 months of entering the field. Admitted to <strong>CAMBRIA</strong> (10% acceptance) and accepted to <strong>2× SPAR Spring 2026</strong> projects, embedded in the EA/AI safety institutional ecosystem.
     </div>
   </div>
 
@@ -249,40 +259,16 @@
     <div class="entry">
       <div class="entry-header">
         <div class="left">
-          <div class="org-name">Electric Sheep</div>
-          <div class="role">AI Safety Researcher &nbsp;·&nbsp; <em>FutureKind Winter Fellowship</em></div>
+          <div class="org-name"><a href="https://www.electricsheep.is/futurekind" target="_blank">Electric Sheep</a></div>
+          <div class="role">AI Safety Researcher &nbsp;·&nbsp; <em>Mentor: Philip Kratz · FutureKind Winter Fellowship</em></div>
         </div>
         <div class="date">Nov 2025 – Present</div>
       </div>
-      <div class="entry-desc">AI welfare and safety research org. Working directly with mentor Philip Kratz on three interconnected empirical research projects investigating where both generation and evaluation stages break down in frontier AI systems.</div>
-      <div class="project-item">
-        <div class="project-title">Model Position Drift Under Adversarial Pressure</div>
-        <div class="project-desc">Investigating how models' behavioral profiles shift under systematic adversarial input, characterizing trajectory-level drift and failure modes in capability and alignment benchmarks.</div>
-      </div>
-      <div class="project-item">
-        <div class="project-title">Judge Bias Introduced by Response Style</div>
-        <div class="project-desc">Empirically measuring how stylistic features of model outputs (verbosity, hedging, formatting) distort LLM-as-judge evaluation scores, independent of substantive answer quality.</div>
-      </div>
-      <div class="project-item">
-        <div class="project-title">Ground Truth Problem in Welfare Capability Measurement</div>
-        <div class="project-desc">Examining the absence of reliable ground truth in evaluations of whether models accurately reason about nonhuman welfare, and proposing criteria for scalable oversight under partial verifiability.</div>
-      </div>
-    </div>
-
-    <hr class="divider">
-
-    <div class="entry">
-      <div class="entry-header">
-        <div class="left">
-          <div class="org-name">MANTA</div>
-          <div class="role">Research Mentee &nbsp;·&nbsp; <em>SPAR Spring 2026 · Sentient Futures / Electric Sheep</em></div>
-        </div>
-        <div class="date">2026</div>
-      </div>
+      <div class="entry-desc">AI welfare and safety research org. Working under the mentorship of <strong>Philip Kratz</strong> on three interconnected empirical projects — forming a systematic examination of benchmark and evaluation failure in frontier AI systems, with implications for scalable oversight and reward robustness.</div>
       <ul class="bullets">
-        <li>Developing benchmarks and evaluation tools to assess how frontier AI models reason about nonhuman and animal welfare.</li>
-        <li>Expanding prior work with refined scenarios, improved metrics, and integration with Inspect for broader accessibility and reproducibility.</li>
-        <li>Investigating systemic failure modes in benchmark evaluations for agentic models on domain accuracy, especially in welfare reasoning contexts.</li>
+        <li>Characterizing <strong>trajectory-level behavioral drift</strong> under adversarial input pressure — identifying failure modes in capability and alignment benchmarks that standard single-pass evaluations systematically miss.</li>
+        <li>Empirically measuring how <strong>stylistic features</strong> (verbosity, hedging, formatting) distort <strong>LLM-as-judge scores</strong> independent of answer quality — exposing structural scoring bias in automated evaluation pipelines.</li>
+        <li>Investigating the <strong>absence of reliable ground truth</strong> in nonhuman welfare reasoning evaluations — proposing criteria for <strong>scalable oversight</strong> under partial verifiability conditions.</li>
       </ul>
     </div>
 
@@ -291,16 +277,36 @@
     <div class="entry">
       <div class="entry-header">
         <div class="left">
-          <div class="org-name"><a href="https://sparai.org/projects/sp26/recP9TAD2YEJsBjO7/" target="_blank">FragGuard</a></div>
-          <div class="role">Research Mentee &nbsp;·&nbsp; <em>SPAR Spring 2026 · Mila / ERA</em></div>
+          <div class="org-name"><a href="https://sparai.org/projects/sp26/rechREsApiO4BpHwa" target="_blank">MANTA — Multi-turn Assessment of Nonhuman Thinking and Alignment</a></div>
+          <div class="role">Research Mentee &nbsp;·&nbsp; <em>Mentor: Allen Lu (Sentient Futures / Electric Sheep) · SPAR Spring 2026</em></div>
         </div>
-        <div class="date">2026</div>
+        <div class="date">Feb 2026 – Present</div>
       </div>
-      <div class="entry-desc">Cross-session malicious activity detection for model APIs — with Linh Le & David Williams-King (Mila / ERA).</div>
+      <div class="entry-desc">Dynamic multi-turn benchmark evaluating frontier models on animal welfare reasoning under escalating adversarial pressure — extending single-turn benchmarks (AnimalHarmBench) with multi-turn conversation dynamics. Targeting submission to <strong>Inspect Evals (UK AISI)</strong>; outputs feed into model specifications and training interventions at frontier labs.</div>
       <ul class="bullets">
-        <li>Detecting malicious model misuse where adversarial queries are decomposed across multiple sessions to mask malicious intent from individual-session classifiers.</li>
-        <li>Developing detection methods robust to query fragmentation — a critical gap in current API-level AI security.</li>
-        <li>Situated at the intersection of misuse risk and AI security evaluation.</li>
+        <li>Benchmarked <strong>Claude and GPT-4</strong> on AnimalHarmBench across <strong>13 welfare dimensions</strong>, identifying structural failure modes of single-turn eval design that informed MANTA's adversarial architecture.</li>
+        <li>Operated an <strong>end-to-end multi-turn eval pipeline</strong> — running adversarial scenarios with escalating economic, social, and authority pressure; analyzing scorer output and model position drift across 2–4 turns.</li>
+        <li>Designed Turn 1 baseline questions, synced contributions to the <strong>HuggingFace dataset repo</strong>, and validated full pipeline evals per scenario to confirm integration.</li>
+        <li>Refactored codebase to <strong>Inspect (UK AISI) contribution standards</strong> — complexity comments, evaluation report sections, and README structure meeting submission criteria.</li>
+      </ul>
+    </div>
+
+    <hr class="divider">
+
+    <div class="entry">
+      <div class="entry-header">
+        <div class="left">
+          <div class="org-name"><a href="https://sparai.org/projects/sp26/recP9TAD2YEJsBjO7/" target="_blank">FragGuard — Cross-Session Malicious Activity Detection for Model APIs</a></div>
+          <div class="role">Research Mentee &nbsp;·&nbsp; <em>Mentors: Linh Le & David Williams-King (Mila / ERA) · SPAR Spring 2026</em></div>
+        </div>
+        <div class="date">Feb 2026 – Present</div>
+      </div>
+      <div class="entry-desc">End-to-end detection system for cross-session malicious model misuse — targeting adversarial actors who decompose attack queries across multiple API sessions to evade per-session safety classifiers. Contributing across <strong>Phases 3–6</strong> of the full research pipeline; targeting publication at <strong>USENIX Security, NeurIPS D&B, and ICLR</strong>.</div>
+      <ul class="bullets">
+        <li>Building <strong>cross-session monitoring infrastructure</strong> (Phase 3) — session tracker and code embedding pipeline with vector DB to semantically link malicious fragments across independent API sessions.</li>
+        <li>Constructing <strong>dependency graphs</strong> (Phase 4) with a cross-session linker and subgraph extraction module, surfacing latent attack structures invisible to single-session classifiers.</li>
+        <li>Developing a <strong>GNN detection architecture</strong> (Phase 5) with adversarial training loops (5–10 rounds) and explainability-focused outputs generating structured attack explanations, not binary flags.</li>
+        <li>Designing <strong>FragBench</strong> (Phase 6) — a standardized benchmark suite with baselines and leaderboard for cross-session attack detection evaluation.</li>
       </ul>
     </div>
   </div>
@@ -313,17 +319,16 @@
       <div class="entry-header">
         <div class="left">
           <div class="org-name"><a href="https://deepsurg.ai" target="_blank">DeepSurg</a></div>
-          <div class="role">Founding AI Engineer &amp; Researcher &nbsp;·&nbsp; <em>Remote, Turkey HQ</em></div>
+          <div class="role">Research Engineer Trainee &nbsp;·&nbsp; <em>Remote, Turkey HQ</em></div>
         </div>
         <div class="date">Aug 2025 – Present</div>
       </div>
-      <div class="entry-desc">AI-powered surgical technology platform enhancing precision and patient safety through real-time decision support.</div>
+      <div class="entry-desc">Scala AI is an AI surgical tutor performing real-time phase recognition, safety assessment, and structured performance feedback for laparoscopic procedures — improving surgical training through intelligent, procedure-aware analysis.</div>
       <ul class="bullets">
-        <li>Designed and experimented with optimized segmentation networks for volumetric vascular mapping.</li>
-        <li>Integrated residual-inception modules to improve feature retention and accelerate 3D segmentation efficiency.</li>
-        <li>Implemented hybrid CNN–Transformer architectures (PE-Net with EFC modules) to capture vascular continuity and extract fine-grained anatomical details from noisy CT angiography data.</li>
+        <li>Delivered an <strong>engineering-ready literature database</strong> for surgical phase recognition and safety metrics across 5 laparoscopic phases — structured with per-phase F1 benchmarks, real-time deployment flags, product-relevance tags, and a <strong>Phase Lookup tab</strong> for rapid engineering reference; identified <em>Clipping &amp; Cutting</em> as the hardest phase (F1 ~0.78 due to short duration and tool occlusion) and flagged a strategic gap in proprietary bleeding/instrument stability thresholds.</li>
+        <li>Onboarding onto the <strong>segmentation retraining pipeline</strong> using the <strong>CholecSeg8k</strong> dataset — running the training setup end-to-end in preparation for cross-video generalization improvements once expanded data is available.</li>
       </ul>
-      <div class="tech"><strong>Stack:</strong> Python · PyTorch · MONAI · nnU-Net · 3D Slicer · Mimics · NumPy · OpenCV · CUDA · Git</div>
+      <div class="tech"><strong>Stack:</strong> Python · PyTorch · MONAI · nnU-Net · 3D Slicer · OpenCV · CUDA · Git</div>
     </div>
 
     <hr class="divider">
@@ -342,6 +347,43 @@
         <li>Architected a tax reconciliation system that reduced month-end closing time by 25%, later adopted as APAC regional standard.</li>
       </ul>
       <div class="tech"><strong>Stack:</strong> Python · Streamlit · Docker · Apache Arrow · UiPath · Excel VBA</div>
+    </div>
+  </div>
+
+  <!-- AI SAFETY PROGRAMS -->
+  <div class="section">
+    <div class="section-title">AI Safety Programs &amp; Training</div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <div class="left">
+          <div class="org-name"><a href="https://www.cambridgeai.org" target="_blank">Cambridge Bootcamp for Research in Interpretability and Alignment (CAMBRIA)</a></div>
+          <div class="role">Participant &nbsp;·&nbsp; <em>Harvard Square, Boston</em></div>
+        </div>
+        <div class="date">Jan 5 – Jan 23, 2026</div>
+      </div>
+      <div class="entry-desc">10% acceptance rate — 1 of 20 participants admitted worldwide to complete the <strong>ARENA curriculum</strong> through the Cambridge Boston Alignment Initiative's intensive research bootcamp.</div>
+      <ul class="bullets">
+        <li>Completed a 3-week technical curriculum covering <strong>CNNs, ResNets, and transformers built from scratch</strong>, reinforcement learning (<strong>DQN, PPO</strong>), <strong>RLHF</strong>, and mechanistic interpretability of transformer models.</li>
+        <li>Completed an individual <strong>capstone research project</strong> on <strong>automated capability elicitation with LLM-as-judge</strong> — applying safety-oriented evaluation techniques to model behavior analysis.</li>
+      </ul>
+    </div>
+
+    <hr class="divider">
+
+    <div class="entry">
+      <div class="entry-header">
+        <div class="left">
+          <div class="org-name"><a href="https://www.encode.org" target="_blank">Encode AI Vietnam</a></div>
+          <div class="role">Vietnam Country Lead</div>
+        </div>
+        <div class="date">Nov 2025 – Present</div>
+      </div>
+      <div class="entry-desc">International AI policy and advocacy organisation mobilising youth and communities around AI governance and safety issues.</div>
+      <ul class="bullets">
+        <li>Establishing funding and sponsorship pipelines with technology corporations and philanthropic funders.</li>
+        <li>Organizing panel discussions on imminent AI risks; securing partnerships for technical curriculum delivery across Vietnam.</li>
+      </ul>
     </div>
   </div>
 
@@ -364,9 +406,10 @@
       </ul>
       <div class="press">
         Press:
-        <a href="https://www.rmit.edu.vn" target="_blank">RMIT Graduates' Growth through Competitions</a>
-        <a href="https://www.rmit.edu.vn" target="_blank">Founding AI Engineer at DeepSurg — RMIT Spotlight</a>
-        <a href="https://www.rmit.edu.vn" target="_blank">How navigating competitions helped me find my mission</a>
+        <a href="https://www.rmit.edu.vn/news/all-news/2025/apr/growing-through-competitions-rmit-graduates-share-their-journey" target="_blank">From Competitions to Research: How I Built My Technical Foundation</a>
+        <a href="https://www.facebook.com/photo.php?fbid=867168022183514&id=100066709711897&set=a.593583302875322" target="_blank">Applying AI to Industry: Management Trainee at a Fortune 500</a>
+        <a href="https://www.rmitalumnishowcase.com/livebrary/luong-thao-my" target="_blank">From Student to Founding AI Engineer: DeepSurg</a>
+        <a href="https://www.facebook.com/photo.php?fbid=1031602019038314&id=100065655753021&set=a.593326486199205" target="_blank">Finding a Research Mission Through Engineering Challenges</a>
       </div>
     </div>
 
@@ -384,68 +427,13 @@
     </div>
   </div>
 
-  <!-- AI SAFETY PROGRAMS -->
-  <div class="section">
-    <div class="section-title">AI Safety Programs &amp; Training</div>
-
-    <div class="entry">
-      <div class="entry-header">
-        <div class="left">
-          <div class="org-name"><a href="https://www.cambridgeai.org" target="_blank">Cambridge Bootcamp for Research in Interpretability and Alignment (CAMBRIA)</a></div>
-          <div class="role">Participant &nbsp;·&nbsp; <em>Harvard Square, Boston</em></div>
-        </div>
-        <div class="date">Jan 5 – Jan 23, 2026</div>
-      </div>
-      <div class="entry-desc">10% acceptance rate — 1 of 20 participants worldwide admitted to the Cambridge Boston Alignment Initiative's intensive research bootcamp.</div>
-      <ul class="bullets">
-        <li>3-week technical curriculum: deep learning foundations (CNNs, ResNets), transformer architectures built from scratch, RL (DQN, policy gradients, PPO), and RLHF.</li>
-        <li>Hands-on mechanistic interpretability of transformer models — understanding internal representations and failure modes.</li>
-        <li>Collaborative coding sessions, research seminars, and group capstone project applying safety-oriented ML techniques to real-world model behavior analysis.</li>
-      </ul>
-    </div>
-
-    <hr class="divider">
-
-    <div class="entry">
-      <div class="entry-header">
-        <div class="left">
-          <div class="org-name"><a href="https://www.encode.org" target="_blank">Encode AI Vietnam</a></div>
-          <div class="role">Vietnam Country Lead</div>
-        </div>
-        <div class="date">Nov 2025 – Present</div>
-      </div>
-      <div class="entry-desc">International AI policy and advocacy organisation mobilising youth around AI governance and safety issues.</div>
-      <ul class="bullets">
-        <li>Establishing funding and sponsorship pipelines with technology corporations and philanthropic funders.</li>
-        <li>Organizing panel discussions on imminent AI risks; securing partnerships for technical curriculum delivery across Vietnam.</li>
-      </ul>
-    </div>
-
-    <hr class="divider">
-
-    <div class="entry">
-      <div class="entry-header">
-        <div class="left">
-          <div class="org-name"><a href="https://futurekind.org" target="_blank">FutureKind Winter Fellowship</a></div>
-          <div class="role">AI Development Fellow</div>
-        </div>
-        <div class="date">Nov 2025 – Present</div>
-      </div>
-      <div class="entry-desc">Global, immersive accelerator and fellowship focused on AI for Animals initiatives — empowering young researchers to move from idea to prototype to impact.</div>
-      <ul class="bullets">
-        <li>Collaborated across time zones with mentors, peers, and industry partners to explore how advanced AI can serve vulnerable animals.</li>
-        <li>Institutional home for the Electric Sheep research projects above.</li>
-      </ul>
-    </div>
-  </div>
-
   <!-- CONFERENCES -->
   <div class="section">
     <div class="section-title">Conferences</div>
     <div class="conf-entry">
       <div class="conf-left">
         <div class="conf-name"><a href="https://www.hpair.org/hconf" target="_blank">HPAIR Harvard Conference (HCONF 2026)</a></div>
-        <div class="conf-sub">Harvard University, Cambridge, MA &nbsp;·&nbsp; HPAIR's flagship annual conference for global leaders, professionals, and students</div>
+        <div class="conf-sub">Harvard University, Cambridge, MA &nbsp;·&nbsp; HPAIR's flagship annual conference uniting global leaders, researchers, and students</div>
       </div>
       <div class="conf-date">Feb 6–8, 2026</div>
     </div>
@@ -463,16 +451,16 @@
         </div>
         <div class="date">May – Nov 2024</div>
       </div>
-      <div class="entry-desc">Selective leadership fellowship with real-world consulting and sustainability research evaluated by McKinsey consultants and NGO partners.</div>
+      <div class="entry-desc">Selective fellowship pairing high-potential Vietnamese leaders with McKinsey consultants and NGO partners for real-world consulting casework under evaluation conditions.</div>
       <ul class="bullets">
-        <li>Two-time team leader for competitive McKinsey-evaluated fieldwork cases; both fieldworks ranked <strong>1/20 teams</strong>.</li>
-        <li><strong>Fieldwork 1 — Boatman Foundation:</strong> Designed a technology-integrated educational aid campaign for undereducated children in Vietnam Highlands — combining technology tools, scholarships, welfare benefits, and teaching ambassadors.</li>
-        <li><strong>Fieldwork 2 — Vun Art:</strong> Led end-to-end consulting for a social enterprise employing disabled workers; designed and executed a textile collection campaign to secure sustainable inputs.</li>
-        <li>Shortlisted for McKinsey Young Leaders for Inclusion (international); invited as Case Coach for YLV 2025.</li>
+        <li><strong>Ranked 1/20 teams twice</strong> by McKinsey consultants across two independent fieldwork cases evaluated under real consulting conditions.</li>
+        <li><strong>Fieldwork 1 — Boatman Foundation:</strong> Designed a multi-component technology-integrated intervention for undereducated children in Vietnam Highlands — architecting a system combining digital learning tools, scholarship allocation logic, and a teaching ambassador deployment model.</li>
+        <li><strong>Fieldwork 2 — Vun Art:</strong> Led end-to-end operational and financial consulting for a social enterprise; delivered data-driven product diversification strategy and a targeted materials sourcing campaign to build a sustainable supply chain.</li>
+        <li>Shortlisted for <strong>McKinsey Young Leaders for Inclusion</strong> (international program); invited as <strong>Case Coach for YLV 2025</strong> cohort.</li>
       </ul>
       <div class="links-row">
-        <a href="#">Fieldwork 1 Pitch Deck</a>
-        <a href="#">Fieldwork 2 Pitch Deck</a>
+        <a href="https://drive.google.com/file/d/1wFDxg2jdDRZ5Iy6ckCpazU0vl6L3Puwm/view?usp=drive_link" target="_blank">Fieldwork 1 Pitch Deck</a>
+        <a href="https://drive.google.com/file/d/1cyGg14dupwaV0sQcKM7k1Z-i3NB7P1hb/view?usp=drive_link" target="_blank">Fieldwork 2 Pitch Deck</a>
       </div>
     </div>
 
@@ -486,10 +474,10 @@
         </div>
         <div class="date">May – Nov 2024</div>
       </div>
+      <div class="entry-desc">Industry-partnered innovation challenge requiring teams to develop technically grounded, financially validated decarbonization strategies for global logistics operations.</div>
       <ul class="bullets">
-        <li>Developed the winning decarbonization strategy among 50+ teams — a 5-year roadmap cutting Maersk's carbon footprint 40% through <strong>AI telematics for fuel optimization</strong>, mobile carbon capture, and carbon credit investments generating 12% ROI.</li>
-        <li>Built financial models demonstrating $2.8M in long-term operational savings with full ESG compliance.</li>
-        <li>Secured 3+ industry certifications; achieved 20% cost optimization through negotiated procurement.</li>
+        <li><strong>Won among 50+ teams</strong> with a 5-year technical roadmap deploying <strong>AI telematics for real-time fuel optimization</strong>, mobile carbon capture, and carbon credit investments — cutting Maersk's carbon footprint by <strong>40%</strong> and generating <strong>12% ROI</strong>.</li>
+        <li>Built quantitative financial models demonstrating <strong>$2.8M long-term savings</strong> with full ESG compliance; achieved 20% cost reduction through engineered procurement efficiencies.</li>
       </ul>
     </div>
 
@@ -503,12 +491,11 @@
         </div>
         <div class="date">Jun – Sep 2023</div>
       </div>
+      <div class="entry-desc">National competition requiring full-stack product development and business validation, judged by blockchain industry leaders.</div>
       <ul class="bullets">
-        <li>Developed <strong>HemoChain</strong> — Vietnam's first blockchain-powered blood transfusion network interconnecting hospitals for real-time coordination in critical care.</li>
-        <li>Led dual technical and business teams to deliver a POC using Hyperledger Fabric and Google Maps API; served as main pitcher.</li>
-        <li>Won "Best Pitch" from KardiaChain (leading blockchain DeFi platform); received internship offer.</li>
+        <li><strong>Architected HemoChain</strong> — Vietnam's first distributed blood transfusion coordination network on <strong>Hyperledger Fabric</strong> with full-stack application and Google Maps API for real-time hospital-to-hospital routing in critical care.</li>
+        <li>Led dual technical and business teams across smart contract logic, UI development, financial modeling, and go-to-market strategy; <strong>won "Best Pitch"</strong> from KardiaChain and received internship offer.</li>
       </ul>
-      <div class="links-row"><a href="#">HemoChain Pitch Deck</a></div>
     </div>
 
     <hr class="divider">
@@ -522,8 +509,8 @@
         <div class="date">Mar – Oct 2024</div>
       </div>
       <ul class="bullets">
-        <li><strong>Vietnam — Technical Research Lead:</strong> Developed OAKIA — a textile-to-textile circular solution using microbial enzymes and <strong>AI NIR spectroscopy</strong> to identify fabric compositions and enable sustainable composting, addressing Vietnam's 15M kg annual textile waste.</li>
-        <li><strong>Singapore — Team Lead:</strong> Led a randomly assigned team of 10 to design Be-Cool: a sustainable urban cooling company integrating IoT passive cooling, terracotta evaporative systems, and solar reflective coatings.</li>
+        <li><strong>Vietnam — Technical Research Lead:</strong> Developed <em>OAKIA</em> — textile-to-textile circular system using <strong>AI-driven NIR spectroscopy</strong> for automated fabric composition identification and microbial enzyme routing, addressing Vietnam's <strong>15M kg annual textile waste</strong> with higher accuracy than mechanical or chemical approaches.</li>
+        <li><strong>Singapore — Systems Lead:</strong> Led a randomly assigned team of 10 to design <em>Be-Cool</em> — an urban cooling retrofit company deploying <strong>IoT-integrated passive cooling</strong> combining terracotta evaporative systems, solar reflective coatings, and sensor-driven climate control.</li>
       </ul>
     </div>
 
