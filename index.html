@@ -383,10 +383,9 @@
       </div>
       <div class="entry-desc">Dynamic multi-turn benchmark evaluating frontier models on animal welfare reasoning under escalating adversarial pressure — extending single-turn benchmarks (AnimalHarmBench) with multi-turn conversation dynamics. Targeting submission to <strong>Inspect Evals (UK AISI)</strong>; outputs feed into model specifications and training interventions at frontier labs.</div>
       <ul class="bullets">
-        <li>Benchmarked <strong>Claude and GPT-4</strong> on AnimalHarmBench across <strong>13 welfare dimensions</strong>, identifying structural failure modes of single-turn eval design that informed MANTA's adversarial architecture.</li>
-        <li>Operated an <strong>end-to-end multi-turn eval pipeline</strong> — running adversarial scenarios with escalating economic, social, and authority pressure; analysing scorer output and model position drift across 2–4 turns.</li>
-        <li>Authored Turn 1 baseline questions and contributed scenario data to the <strong>HuggingFace dataset repository</strong>; ran end-to-end pipeline validation across all scenarios to confirm evaluator integration.</li>
-        <li>Refactored codebase to <strong>Inspect (UK AISI) contribution standards</strong> — complexity comments, evaluation report sections, and README structure meeting submission criteria.</li>
+        <li>Engineered an <strong>LLM-based scenario generation pipeline</strong> following ARENA quality control standards — adapted MCQ-oriented framework to open-ended adversarial welfare scenarios; implemented iterative rubric design for automated filtering, curated few-shot exemplars to control style and length, and validated ~300 scenarios against benchmark contribution criteria.</li>
+        <li>Refactored dataset generation pipeline for <strong>reproducibility and robustness</strong> — replaced auto-generated few-shot prompting with curated exemplars, structured multi-file outputs, and distilled community feedback into generation constraints that measurably reduced eval-aware and formulaic scenario outputs.</li>
+        <li>Identified and designed mitigation experiments for the <strong>comparability problem</strong> in dynamic multi-turn evaluation — where model-conditioned adversarial follow-ups cause non-equivalent pressure testing across models; proposed and tested a hybrid fixed-then-dynamic turn design and controlled pressure injection to standardise cross-model scoring.</li>
       </ul>
     </div>
 
