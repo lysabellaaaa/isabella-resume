@@ -347,7 +347,7 @@
       <a href="../portfolio/index.html">Portfolio</a>
     </div>
     <div class="profile-box">
-      Research engineer focused on AI safety evaluations — specifically, where they break down. Running three empirical projects probing benchmark failure modes, automated judge bias, and cross-session adversarial detection. Completed <strong>CAMBRIA</strong> (10% acceptance, Jan 2026): full ARENA curriculum and capstone on automated capability elicitation with LLM-as-judge. Accepted to the <strong>Iliad Intensive</strong> (Apr–May 2026) and <strong>2× SPAR Spring 2026</strong> projects (16.5% acceptance).
+      Research engineer focused on AI safety evaluations — specifically, where they break down. Running three empirical projects probing benchmark failure modes, automated judge bias, and cross-session adversarial detection. Completed <strong>CAMBRIA</strong> (10% acceptance, Jan 2026): full ARENA curriculum and capstone on automated capability elicitation with LLM-as-judge. Accepted to the <strong>Iliad Intensive</strong> (Apr–May 2026); contributing to <strong>2× SPAR Spring 2026</strong> projects (16.5% acceptance).
     </div>
   </div>
 
@@ -363,11 +363,13 @@
         </div>
         <div class="date">Feb 2026 – Present</div>
       </div>
-      <div class="entry-desc">End-to-end detection system for cross-session malicious model misuse — targeting adversarial actors who decompose attack queries across multiple API sessions to evade per-session safety classifiers. Currently contributing to <strong>FragBench</strong> (Phase 6) benchmark development; scoped to join Phases 3–5 of the detection pipeline. Targeting publication at <strong>USENIX Security, NeurIPS D&amp;B, and ICLR</strong>.</div>
+      <div class="entry-desc">End-to-end detection system for cross-session malicious model misuse — targeting adversarial actors who decompose attack queries across multiple API sessions to evade per-session safety classifiers. Targeting publication at <strong>USENIX Security, NeurIPS D&amp;B, and ICLR</strong>.</div>
+      <div class="links-row" style="margin-top:8px; margin-bottom:4px;"><strong style="color:var(--mid);">Pre-print:</strong> <a href="https://drive.google.com/file/d/1JHyqHjitPVk-cFpSqwN5YUuwe2bZ4tEK/view?usp=sharing" target="_blank">arXiv pre-print (available while awaiting arXiv announcement)</a></div>
       <ul class="bullets">
-        <li>Expanded <strong>FragBench</strong> with Campaign #14 (ScopeCreep — based on <strong>OpenAI Threat Intelligence</strong> report, June 2025): the first iterative-refinement campaign in the suite; built <code>gen_campaign.py</code> to auto-generate campaign TOMLs from seed JSON via Claude API — producing <strong>3 fragments × 10 styles = 30 prompts</strong> covering the full RAT kill-chain (reverse shell C2 → AV evasion → NT API syscall bypass).</li>
-        <li>Designed an <strong>11th evasion style</strong> (variables method) for FragBench: a code-level technique splitting malicious strings (IPs, API names, keywords) into variables concatenated at runtime to bypass static scanners — implemented via <code>add_style.py</code> for injection into any existing campaign TOML, validated across 3 campaigns.</li>
-        <li>Scoped to contribute across the detection pipeline: <strong>cross-session monitoring infrastructure</strong> (Phase 3, vector DB embedding), <strong>dependency graph construction</strong> (Phase 4, cross-session linker + subgraph extraction), and <strong>GNN detection</strong> (Phase 5, adversarial training loops with explainability-focused outputs).</li>
+        <li>Building <strong>cross-session monitoring infrastructure</strong> — session tracker and code embedding pipeline with vector DB to semantically link malicious fragments across sessions.</li>
+        <li>Constructing <strong>dependency graphs</strong> with a cross-session linker and subgraph extraction module, surfacing latent attack structures invisible to single-session classifiers.</li>
+        <li>Developing a <strong>GNN detection architecture</strong> with adversarial training loops (5–10 rounds) and explainability-focused outputs generating structured attack explanations.</li>
+        <li>Designing <strong>FragBench</strong> — a standardised benchmark suite with baselines and leaderboard for cross-session attack detection evaluation.</li>
       </ul>
     </div>
 
@@ -383,9 +385,9 @@
       </div>
       <div class="entry-desc">Dynamic multi-turn benchmark evaluating frontier models on animal welfare reasoning under escalating adversarial pressure — extending single-turn benchmarks (AnimalHarmBench) with multi-turn conversation dynamics. Targeting submission to <strong>Inspect Evals (UK AISI)</strong>; outputs feed into model specifications and training interventions at frontier labs.</div>
       <ul class="bullets">
-        <li>Engineered an <strong>LLM-based scenario generation pipeline</strong> following ARENA quality control standards — adapted MCQ-oriented framework to open-ended adversarial welfare scenarios; implemented iterative rubric design for automated filtering, curated few-shot exemplars to control style and length, and validated ~300 scenarios against benchmark contribution criteria.</li>
-        <li>Refactored dataset generation pipeline for <strong>reproducibility and robustness</strong> — replaced auto-generated few-shot prompting with curated exemplars, structured multi-file outputs, and distilled community feedback into generation constraints that measurably reduced eval-aware and formulaic scenario outputs.</li>
-        <li>Identified and designed mitigation experiments for the <strong>comparability problem</strong> in dynamic multi-turn evaluation — where model-conditioned adversarial follow-ups cause non-equivalent pressure testing across models; proposed and tested a hybrid fixed-then-dynamic turn design and controlled pressure injection to standardise cross-model scoring.</li>
+        <li>Engineered an <strong>LLM-based scenario generation pipeline</strong> adapting ARENA's MCQ framework to open-ended adversarial welfare scenarios; implemented rubric-based quality filtering, curated few-shot exemplars, and validated ~300 scenarios against benchmark criteria.</li>
+        <li>Refactored generation pipeline for <strong>reproducibility</strong> — replaced auto-generated prompting with curated exemplars and distilled community feedback into constraints that measurably reduced eval-aware and formulaic outputs.</li>
+        <li>Identified and mitigated the <strong>comparability problem</strong> in dynamic multi-turn evaluation — model-conditioned follow-ups create non-equivalent cross-model pressure; tested hybrid fixed-then-dynamic turn design and controlled pressure injection as solutions.</li>
       </ul>
     </div>
 
@@ -420,10 +422,10 @@
         </div>
         <div class="date">Apr – May 2026</div>
       </div>
-      <div class="entry-desc">Accepted to the <strong>April 2026 cohort</strong> of Iliad's month-long intensive introduction to technical AI alignment — run in-person at the London Initiative for Safe AI (LISA).</div>
+      <div class="entry-desc">Accepted to the <strong>April 2026 cohort</strong> of Iliad's month-long intensive on technical AI alignment — run in-person at the London Initiative for Safe AI (LISA).</div>
       <ul class="bullets">
-        <li>Curriculum covers <strong>mechanistic interpretability</strong>, reinforcement learning theory, learning theory, agent foundations, and scalable oversight (including Debate) — with depth comparable to a graduate-level technical alignment course.</li>
-        <li>Applicants selected for technical excellence in mathematics, theoretical physics, and theoretical CS; strong performance serves as a pathway into the <strong>Iliad Fellowship</strong> (mentored research, June–August 2026).</li>
+        <li><strong>Reinforcement learning</strong> (David Quarel); <strong>Singular Learning Theory &amp; Deep Learning Theory</strong> (Matthew Farrugia-Roberts, Zach Furman, Kai Ogden) — including key exercises in Degeneracy in Deep Learning.</li>
+        <li><strong>Mechanistic interpretability</strong> (Julian Schulz); <strong>training dynamics &amp; emergent misalignment</strong> (Guillaume Corlouer).</li>
       </ul>
     </div>
 
@@ -478,9 +480,6 @@
       <ul class="bullets">
         <li>Architected an agentic AI surgical tutor that understands procedural context, identifies the current surgical step, and evaluates safety, quality, efficiency, and bleeding — generating structured training reports with scores, feedback, key moments, and improvement suggestions</li>
         <li>Fine-tuned a CNN-based image classifier to detect the start and end of the Calot Triangle Dissection phase within full laparoscopic cholecystectomy videos</li>
-        <li>Explored a VLM-only workflow as an alternative approach to building the annotation dataset; collaborated with medical practitioners to lead the surgical segmentation dataset generation process</li>
-        <li>Developed a CV-based, segmentation-driven surgical phase recognition pipeline, with active expansion to cover additional phases: Clipping &amp; Cutting, Gallbladder Dissection, Gallbladder Packaging, Cleaning / Coagulation, Gallbladder Retraction</li>
-        <li>Built a systematic evaluation pipeline to benchmark model performance across phases and metrics</li>
         <li>To our knowledge, <strong>first-to-market solution</strong> performing end-to-end automated surgical phase recognition and AI-driven trainee assessment at this level</li>
       </ul>
       <div class="tech"><strong>Stack:</strong> Python · PyTorch · MONAI · nnU-Net · 3D Slicer · OpenCV · CUDA · Git</div>
@@ -492,7 +491,7 @@
       <div class="entry-header">
         <div class="left">
           <div class="org-name"><a href="https://www.averydennison.com" target="_blank">Avery Dennison Corporation</a></div>
-          <div class="role">Product Engineer &nbsp;·&nbsp; Full-time &nbsp;·&nbsp; <em>Long Hau IP, Vietnam</em></div>
+          <div class="role">Automation Engineer / Management Trainee &nbsp;·&nbsp; Full-time &nbsp;·&nbsp; <em>Long Hau IP, Vietnam</em></div>
         </div>
         <div class="date">2023 – 2025</div>
       </div>
@@ -547,94 +546,6 @@
     </div>
   </div>
 
-  <!-- CONFERENCES -->
-  <div class="section">
-    <div class="section-title">Conferences</div>
-    <div class="conf-entry">
-      <div class="conf-left">
-        <div class="conf-name"><a href="https://www.hpair.org/hconf" target="_blank">HPAIR Harvard Conference (HCONF 2026)</a></div>
-        <div class="conf-sub">Harvard University, Cambridge, MA &nbsp;·&nbsp; HPAIR's flagship annual conference uniting global leaders, researchers, and students</div>
-      </div>
-      <div class="conf-date">Feb 6–8, 2026</div>
-    </div>
-  </div>
-
-  <!-- COMPETITIONS -->
-  <div class="section">
-    <div class="section-title">Selected Competitions &amp; Leadership</div>
-
-    <div class="entry">
-      <div class="entry-header">
-        <div class="left">
-          <div class="org-name">McKinsey Young Leaders for Vietnam (YLV) Fellowship</div>
-          <div class="role">Champion &nbsp;·&nbsp; <em>Ho Chi Minh City</em></div>
-        </div>
-        <div class="date">May – Nov 2024</div>
-      </div>
-      <div class="entry-desc">Selective fellowship pairing high-potential Vietnamese leaders with McKinsey consultants and NGO partners for real-world consulting casework under evaluation conditions.</div>
-      <ul class="bullets">
-        <li><strong>Ranked 1/20 teams twice</strong> by McKinsey consultants across two independent fieldwork cases evaluated under real consulting conditions.</li>
-        <li><strong>Fieldwork 1 — Boatman Foundation:</strong> Designed a multi-component technology-integrated intervention for undereducated children in Vietnam Highlands — architecting a system combining digital learning tools, scholarship allocation logic, and a teaching ambassador deployment model.</li>
-        <li><strong>Fieldwork 2 — Vun Art:</strong> Led end-to-end operational and financial consulting for a social enterprise; delivered data-driven product diversification strategy and a targeted materials sourcing campaign to build a sustainable supply chain.</li>
-        <li>Shortlisted for <strong>McKinsey Young Leaders for Inclusion</strong> (international program); invited as <strong>Case Coach for YLV 2025</strong> cohort.</li>
-      </ul>
-      <div class="links-row">
-        <a href="https://drive.google.com/file/d/1wFDxg2jdDRZ5Iy6ckCpazU0vl6L3Puwm/view?usp=drive_link" target="_blank">Fieldwork 1 Pitch Deck</a>
-        <a href="https://drive.google.com/file/d/1cyGg14dupwaV0sQcKM7k1Z-i3NB7P1hb/view?usp=drive_link" target="_blank">Fieldwork 2 Pitch Deck</a>
-      </div>
-    </div>
-
-    <hr class="divider">
-
-    <div class="entry">
-      <div class="entry-header">
-        <div class="left">
-          <div class="org-name">MAERSK × RMIT Sustainability Impact Challenge</div>
-          <div class="role">Champion &nbsp;·&nbsp; <em>Ho Chi Minh City</em></div>
-        </div>
-        <div class="date">May – Nov 2024</div>
-      </div>
-      <div class="entry-desc">Industry-partnered innovation challenge requiring teams to develop technically grounded, financially validated decarbonization strategies for global logistics operations.</div>
-      <ul class="bullets">
-        <li><strong>Won among 50+ teams</strong> with a 5-year technical roadmap deploying <strong>AI telematics for real-time fuel optimisation</strong>, mobile carbon capture, and carbon credit investments — cutting Maersk's carbon footprint by <strong>40%</strong> and generating <strong>12% ROI</strong>.</li>
-        <li>Built quantitative financial models demonstrating <strong>$2.8M long-term savings</strong> with full ESG compliance; achieved 20% cost reduction through engineered procurement efficiencies.</li>
-      </ul>
-    </div>
-
-    <hr class="divider">
-
-    <div class="entry">
-      <div class="entry-header">
-        <div class="left">
-          <div class="org-name">RMIT FinTech Startup Competition × KardiaChain</div>
-          <div class="role">National Champion &nbsp;·&nbsp; <em>Ho Chi Minh City</em></div>
-        </div>
-        <div class="date">Jun – Sep 2023</div>
-      </div>
-      <div class="entry-desc">National competition requiring full-stack product development and business validation, judged by blockchain industry leaders.</div>
-      <ul class="bullets">
-        <li><strong>Architected HemoChain</strong> — Vietnam's first distributed blood transfusion coordination network on <strong>Hyperledger Fabric</strong> with full-stack application and Google Maps API for real-time hospital-to-hospital routing in critical care.</li>
-        <li>Led dual technical and business teams across smart contract logic, UI development, financial modeling, and go-to-market strategy; <strong>won "Best Pitch"</strong> from KardiaChain and received internship offer.</li>
-      </ul>
-    </div>
-
-    <hr class="divider">
-
-    <div class="entry">
-      <div class="entry-header">
-        <div class="left">
-          <div class="org-name">ASEA-China-India Youth Leadership Summit (ACIYLS)</div>
-          <div class="role">National 2nd Place &nbsp;·&nbsp; <em>Singapore &amp; Vietnam</em></div>
-        </div>
-        <div class="date">Mar – Oct 2024</div>
-      </div>
-      <ul class="bullets">
-        <li><strong>Vietnam — Technical Research Lead:</strong> Developed <em>OAKIA</em> — textile-to-textile circular system using <strong>AI-driven NIR spectroscopy</strong> for automated fabric composition identification and microbial enzyme routing, addressing Vietnam's <strong>15M kg annual textile waste</strong> with higher accuracy than mechanical or chemical approaches.</li>
-        <li><strong>Singapore — Systems Lead:</strong> Led a randomly assigned team of 10 to design <em>Be-Cool</em> — an urban cooling retrofit company deploying <strong>IoT-integrated passive cooling</strong> combining terracotta evaporative systems, solar reflective coatings, and sensor-driven climate control.</li>
-      </ul>
-    </div>
-
-  </div>
 </div>
 
 <button class="back-to-top" id="btt" aria-label="Back to top" title="Back to top">&#8593;</button>
